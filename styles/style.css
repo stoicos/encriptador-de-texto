@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #f2f6ff;
+}
+.navbar {
+    padding: 2rem;
+}
+.encriptador-container {
+    display: flex;
+    justify-content: space-around;
+}
+.advertencia-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.advertencia-container div {
+    margin-right: .3rem;
+}
+button {
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 15rem;
+}
+#encriptar {
+    background-color: #0A3871;
+    border: none;
+    color: white;
+    margin-right: 1rem;
+}
+#desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+.muneco-container{
+    padding: 10rem 2rem;
+    max-width: 30rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 2rem;
+    -webkit-box-shadow: 1px 3px 19px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 3px 19px 0px rgba(0,0,0,0.15);
+    box-shadow: 1px 3px 19px 0px rgba(0,0,0,0.15);
+}
+textarea {
+    border: none;
+    font-size: 2rem;
+    width: 50rem;
+    height: 30rem;
+    outline: none; 
+    resize: none; 
+    padding: 1rem;
+    color: #0A3871;
+    font-weight: lighter;
+}
+textarea::placeholder {
+    color: #0A3871;
+}
+.text-lg {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.text-sm {
+    margin: 1rem;
+}
+#alerta {
+    padding: 1rem;
+    background-color: #ff2f2f;
+    color: white;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+#resultado {
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .encriptador-container {
+        flex-direction: column;
+    }
+    .encriptador-tablet {
+        margin: 4rem;
+    }
+    .advertencia-container{
+        width: 30rem;
+        margin: 1rem auto;
+    }
+    #imagen-container img {
+        display: none;
+    }
+    textarea {
+        width: 80%;
+        height: 20rem;
+    }
+    .botones {
+        text-align: center;
+    }
+    .muneco-container {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .encriptador-container {
+        flex-direction: column;
+    }
+    .encriptador-tablet {
+        margin: 4rem;
+    }
+    .advertencia-container{
+        width: 30rem;
+        margin: 1rem auto;
+    }
+    #imagen-container img {
+        display: none;
+    }
+    textarea {
+        width: 80%;
+        height: 20rem;
+    }
+    .botones {
+        text-align: center;
+    }
+    .muneco-container {
+        padding: 1rem;
+        margin: 0 2rem;
+    }
+    .botones-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .botones-container button {
+        margin: .5rem;
+    }
+    .advertencia-container {
+        width: 18rem;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
